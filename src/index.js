@@ -6,7 +6,7 @@ let AudioPlayer = FlashPlayer
 
 let element = document.createElement('audio')
 if (element && element.canPlayType) {
-  if (element.canPlayType('audio/mp3') === 'probably') {
+  if (element.canPlayType('audio/mp3') !== '') {
     AudioPlayer = HtmlPlayer
   }
 }

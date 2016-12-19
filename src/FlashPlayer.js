@@ -75,6 +75,16 @@ export default class FlashPlayer {
   }
 
   /**
+   * 暂停播放当前音频
+   */
+  pause() {
+    let { swf } = this
+    if (swf.doAction) {
+      swf.doAction('pause')
+    }
+  }
+
+  /**
    * 停止播放当前音频
    */
   stop() {

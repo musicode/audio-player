@@ -102,6 +102,14 @@ export default class HtmlPlayer {
   }
 
   /**
+   * 暂停播放当前音频
+   */
+  stop() {
+    let { audio } = this
+    audio.pause();
+  }
+
+  /**
    * 停止播放当前音频
    */
   stop() {
